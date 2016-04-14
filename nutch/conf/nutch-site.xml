@@ -321,9 +321,18 @@
   </description>
 </property>
 
+<!-- Edit this property based on project structure -->
+<!-- <property>
+  <name>interactiveselenium.handlers</name>
+  <value>handlers.LoginHandler</value>
+  <description></description>
+</property> -->
+
+<!-- New property added to plugin.includes to include protocol-interactiveselenium -->
+
 <property>
   <name>plugin.includes</name>
-  <value>protocol-http|protocol-httpclient|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|indexer-solr|scoring-similarity|urlnormalizer-(pass|regex|basic)</value>
+  <value>protocol-interactiveselenium|protocol-http|protocol-httpclient|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|indexer-solr|scoring-similarity|urlnormalizer-(pass|regex|basic)</value>
   <description>Regular expression naming plugin directory names to
   include.  Any plugin not matching this expression is excluded.
   In any case you need at least include the nutch-extensionpoints plugin. By
